@@ -1,21 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppRoutingModule } from './components/app-routing.module';
 
-import {TopGamesModule} from './components/top-games/top-games.module';
+import { ComponentsModule } from './components/components.module';
+import { StoresModule } from './stores/stores.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    TopGamesModule,
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [ComponentsModule, StoresModule, BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

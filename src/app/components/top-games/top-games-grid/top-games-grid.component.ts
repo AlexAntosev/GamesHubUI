@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { TopGamesEntry } from 'src/app/models/app/top-games/top-games-entry';
 
 @Component({
   selector: 'top-games-grid',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['top-games-grid.component.scss']
 })
 export class TopGamesGridComponent {
-
+  @Input()
+  games: TopGamesEntry[];
 }

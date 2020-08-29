@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
-import { environment } from '../../environments/environment';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 export abstract class BaseRepository {
   constructor(private httpClient: HttpClient) {}

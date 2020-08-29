@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Store } from '../../stores/store'
 import { Observable } from 'rxjs';
-import { TopGamesEntry } from 'src/app/models/app/top-games/top-games-entry';
 import { TopGamesRequestedAction } from 'src/app/actions/top-games/top-games-requested.action';
+import { TopGamesEntry } from 'src/app/models/app/top-games/top-games-entry';
+import { Store } from '../../stores/store';
 
 @Component({
   selector: 'top-games',
@@ -13,12 +13,15 @@ export class TopGamesComponent implements OnInit {
   games$: Observable<TopGamesEntry[]>;
   games: TopGamesEntry[];
 
-  constructor(store: Store, private gamesRequestedAction: TopGamesRequestedAction) {
+  constructor(
+    store: Store,
+    private gamesRequestedAction: TopGamesRequestedAction
+  ) {
     this.games$ = store.pagesStore.topGames.games$;
   }
 
   ngOnInit() {
-    this.games$.subscribe(games => this.games = games);
+    this.games$.subscribe(games => (this.games = games));
   }
 
   queryTopGames() {

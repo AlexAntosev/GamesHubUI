@@ -1,14 +1,12 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './components/app-routing.module';
-
-import { ComponentsModule } from './components/components.module';
-import { StoresModule } from './stores/stores.module';
-import { ServicesModule } from './services/services.module';
+import { BrowserModule } from '@angular/platform-browser';
 import { ActionsModule } from './actions/actions.module';
-import { RepositoriesModule } from './repositories/repositories.module';
+import { AppRoutingModule } from './components/app-routing.module';
 import { AppComponent } from './components/app.component';
+import { ComponentsModule } from './components/components.module';
+import { RepositoriesModule } from './repositories/repositories.module';
+import { ServicesModule } from './services/services.module';
+import { StoresModule } from './stores/stores.module';
 
 @NgModule({
   imports: [
@@ -21,6 +19,6 @@ import { AppComponent } from './components/app.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap:[AppComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

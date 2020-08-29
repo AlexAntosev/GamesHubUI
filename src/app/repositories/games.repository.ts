@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ITopGamesEntry } from '../models/api/games/i-top-games-entry';
-import { Injectable } from '@angular/core';
 import { BaseRepository } from './base.repository';
 
 @Injectable()

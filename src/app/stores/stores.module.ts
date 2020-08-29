@@ -4,4 +4,4 @@ import { Store } from './store';
 @NgModule({
   providers: [Store]
 })
-export class StoresModule { }
+export class StoresModule {}

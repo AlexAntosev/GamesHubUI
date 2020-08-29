@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { TopGamesEntry } from 'src/app/models/app/top-games/top-games-entry';
 
 @Component({
@@ -10,10 +10,7 @@ export class TopGamesGridItemComponent implements OnInit {
   @Input()
   game: TopGamesEntry;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-
-  }
-
+  ngOnInit(): void {}
 }

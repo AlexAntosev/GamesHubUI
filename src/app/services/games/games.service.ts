@@ -10,7 +10,7 @@ export class GamesService {
       name: game.name,
       overallRank: game.overallRank,
       rating: game.rating
-    }
+    };
   }
 
   mapToEntity(game: TopGamesEntry): ITopGamesEntry {
@@ -19,6 +19,6 @@ export class GamesService {
       name: game.name,
       overallRank: game.overallRank,
       rating: game.rating
-    }
+    };
   }
 }

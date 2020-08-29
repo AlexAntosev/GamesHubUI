@@ -1,8 +1,8 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { TopGamesGridItemComponent } from './top-games-grid/top-games-grid-item/top-games-grid-item.component';
 import { TopGamesGridComponent } from './top-games-grid/top-games-grid.component';
 import { TopGamesComponent } from './top-games.component';
-import { TopGamesGridItemComponent } from './top-games-grid/top-games-grid-item/top-games-grid-item.component';
-import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -10,8 +10,6 @@ import { CommonModule } from '@angular/common';
     TopGamesGridComponent,
     TopGamesGridItemComponent
   ],
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule]
 })
-export class TopGamesModule { }
+export class TopGamesModule {}

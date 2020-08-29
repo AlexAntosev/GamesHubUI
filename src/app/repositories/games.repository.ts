@@ -10,6 +10,6 @@ export class GamesRepository {
   }
 
   getTopGames(): Observable<ITopGamesEntry[]> {
-    return this.httpClient.get<ITopGamesEntry[]>('localhost:44371/games');
+    return this.httpClient.get<ITopGamesEntry[]>('https://localhost:44371/api/games/top');
   }
 }

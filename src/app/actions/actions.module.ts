@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { TopGamesRequestedAction } from './top-games/top-games-requested.action';
+import { TopGamesRequestedAction } from 'src/app/actions/top-games/top-games-requested.action';
 
 @NgModule({
   providers: [TopGamesRequestedAction]

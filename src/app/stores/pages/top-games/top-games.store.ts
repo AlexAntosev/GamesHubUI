@@ -1,5 +1,5 @@
 import { BehaviorSubject } from 'rxjs';
-import { TopGamesEntry } from '../../../models/app/top-games/top-games-entry';
+import { TopGamesEntry } from 'src/app/models/app/top-games/top-games-entry';
 
 export class TopGamesStore {
   games$: BehaviorSubject<TopGamesEntry[]> = new BehaviorSubject<

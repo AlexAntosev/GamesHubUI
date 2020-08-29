@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { PagesStore } from './pages/pages.store';
+import { PagesStore } from 'src/app/stores/pages/pages.store';
 
 @Injectable()
 export class Store {

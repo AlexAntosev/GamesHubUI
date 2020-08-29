@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { TopGamesRequestedAction } from 'src/app/actions/top-games/top-games-requested.action';
 import { TopGamesEntry } from 'src/app/models/app/top-games/top-games-entry';
-import { Store } from '../../stores/store';
+import { Store } from 'src/app/stores/store';
 
 @Component({
   selector: 'top-games',

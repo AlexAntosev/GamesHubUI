@@ -5,6 +5,7 @@
     "outDir": "./out-tsc/app",
     "types": [],
     "experimentalDecorators": true,
+    "importHelpers": true,
     "typeRoots": [
       "node_modules/@types"
     ]

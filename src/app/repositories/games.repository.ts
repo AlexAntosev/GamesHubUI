@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ITopGamesEntry } from '../models/api/games/i-top-games-entry';
-import { BaseRepository } from './base.repository';
+import { ITopGamesEntry } from 'src/app/models/api/games/i-top-games-entry';
+import { BaseRepository } from 'src/app/repositories/base.repository';
 
 @Injectable()
 export class GamesRepository extends BaseRepository {

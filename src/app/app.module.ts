@@ -7,6 +7,7 @@ import { ComponentsModule } from './components/components.module';
 import { StoresModule } from './stores/stores.module';
 import { ActionsModule } from './actions/actions.module';
 import { RepositoriesModule } from './repositories/repositories.module';
+import { AppComponent } from './components/app.component';
 
 @NgModule({
   imports: [
@@ -15,8 +16,9 @@ import { RepositoriesModule } from './repositories/repositories.module';
     RepositoriesModule,
     StoresModule,
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
   providers: [],
+  bootstrap:[AppComponent]
 })
 export class AppModule {}

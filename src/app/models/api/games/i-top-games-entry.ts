@@ -1,6 +1,6 @@
 export interface ITopGamesEntry {
   id: string,
   name: string,
-  globalRank: number,
-  rate: number
+  overallRank: number,
+  rating: number
 }

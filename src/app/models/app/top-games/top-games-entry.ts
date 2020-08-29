@@ -1,6 +1,6 @@
 export class TopGamesEntry {
   id: string = '';
   name: string = '';
-  globalRank: number = 0;
-  rate: number = 0;
+  overallRank: number = 0;
+  rating: number = 0;
 }

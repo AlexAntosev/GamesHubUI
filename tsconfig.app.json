@@ -4,7 +4,10 @@
   "compilerOptions": {
     "outDir": "./out-tsc/app",
     "types": [],
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ]
   },
   "files": [
     "src/main.ts",

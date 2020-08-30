@@ -11,6 +11,19 @@ $border-radius-sketchy: 255px 25px 225px 25px/25px 225px 25px 255px;
 $border-radius-lg-sketchy: 555px 25px 15px 25px/25px 5px 35px 555px;
 $border-radius-sm-sketchy: 255px 25px 225px 25px/25px 225px 25px 255px;
 
+// Body ========================================================================
+
+body {
+  margin: 0;
+  font-family: "Neucha", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
 // Navbar ======================================================================
 
 .navbar {
@@ -127,6 +140,41 @@ table {
   }
 
 }
+
+// Additional
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 4px solid #333;
+}
+
+.table th, .table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 2px solid #333;
+}
+
+table th, table td {
+  background-color: #fff;
+}
+
+th {
+  text-align: inherit;
+}
+
+.table-active, .table-active > th, .table-active > td {
+  background-color: #fff;
+}
+
 
 
 // Forms =======================================================================

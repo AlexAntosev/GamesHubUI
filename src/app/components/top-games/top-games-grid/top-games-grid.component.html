@@ -1,5 +1,16 @@
 <div>
-  <ng-container *ngFor="let game of games">
-    <top-games-grid-item [game]="game"></top-games-grid-item>
-  </ng-container>
+  <table class="table table-hover">
+    <thead>
+      <th scope="col">Rank</th>
+      <th scope="col">Name</th>
+      <th scope="col">Rating</th>
+    </thead>
+    <tbody>
+      <tr
+        class="table-active"
+        *ngFor="let game of games"
+        [top-games-grid-item]="game"
+      ></tr>
+    </tbody>
+  </table>
 </div>

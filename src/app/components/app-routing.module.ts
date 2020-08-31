@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { GameOverviewComponent } from 'src/app/components/game-overview/game-overview.component';
 
 const routes: Routes = [
   {
@@ -10,8 +9,14 @@ const routes: Routes = [
         m => m.TopGamesModule
       )
   },
-  { path: '', redirectTo: '/top-games', pathMatch: 'full' },
-  { path: 'game-overview/:id', component: GameOverviewComponent }
+  {
+    path: 'game-overview',
+    loadChildren: () =>
+      import('src/app/components/game-overview/game-overview.module').then(
+        m => m.GameOverviewModule
+      )
+  },
+  { path: '', redirectTo: '/top-games', pathMatch: 'full' }
 ];
 
 @NgModule({

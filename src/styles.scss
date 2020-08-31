@@ -1,5 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
-
-@import './sass/variables';
-@import './sass/bootswatch';
+// just change theme name 
+@import "~bootswatch/dist/sketchy/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/sketchy/bootswatch";
 

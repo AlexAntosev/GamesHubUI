@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TopGamesComponent } from 'src/app/components/top-games/top-games.component';
+import { TopGamesComponent } from 'src/app/components/pages/top-games/top-games.component';
 
 const routes: Routes = [
   { path: '', component: TopGamesComponent }

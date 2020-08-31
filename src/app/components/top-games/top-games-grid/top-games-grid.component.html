@@ -10,6 +10,7 @@
         class="table-active"
         *ngFor="let game of games"
         [top-games-grid-item]="game"
+        routerLink="/game-overview/{{game.id}}"
       ></tr>
     </tbody>
   </table>

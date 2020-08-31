@@ -5,9 +5,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from 'src/app/components/app-routing.module';
 import { AppComponent } from 'src/app/components/app.component';
 import { TopGamesModule } from 'src/app/components/top-games/top-games.module';
+import { GameOverviewComponent } from './game-overview/game-overview.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, GameOverviewComponent],
   imports: [
     TopGamesModule,
     CommonModule,

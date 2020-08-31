@@ -1,3 +1,3 @@
 export interface IAction {
-  execute();
+  execute(param :any);
 }

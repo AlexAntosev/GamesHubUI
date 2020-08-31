@@ -9,6 +9,13 @@ const routes: Routes = [
         m => m.TopGamesModule
       )
   },
+  {
+    path: 'game-overview',
+    loadChildren: () =>
+      import('src/app/components/game-overview/game-overview.module').then(
+        m => m.GameOverviewModule
+      )
+  },
   { path: '', redirectTo: '/top-games', pathMatch: 'full' }
 ];
 

@@ -10,6 +10,7 @@ export abstract class BaseRepository {
   }
 
   private buildUrl(url: string): string {
-    return `${environment.serverURL}${url}`;
+    var url = `${environment.serverURL}${url}`;
+    return url;
   }
 }

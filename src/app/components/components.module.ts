@@ -4,14 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from 'src/app/components/app-routing.module';
 import { AppComponent } from 'src/app/components/app.component';
-import { GameOverviewModule } from 'src/app/components/game-overview/game-overview.module';
-import { TopGamesModule } from 'src/app/components/top-games/top-games.module';
+import { LayoutModule } from 'src/app/components/core/layout/layout.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
-    TopGamesModule,
-    GameOverviewModule,
+    LayoutModule,
     CommonModule,
     BrowserModule,
     AppRoutingModule,

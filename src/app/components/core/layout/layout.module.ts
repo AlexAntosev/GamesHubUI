@@ -6,10 +6,7 @@ import { AppHeaderComponent } from 'src/app/components/core/header/app-header.co
 import { LayoutComponent } from 'src/app/components/core/layout/layout.component';
 
 @NgModule({
-  declarations: [
-    AppHeaderComponent,
-    LayoutComponent
-  ],
+  declarations: [AppHeaderComponent, LayoutComponent],
   imports: [CommonModule, BrowserModule, AppRoutingModule]
 })
 export class LayoutModule {}

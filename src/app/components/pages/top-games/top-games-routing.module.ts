@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { TopGamesComponent } from 'src/app/components/pages/top-games/top-games.component';
 
 const routes: Routes = [
-  { path: '', component: TopGamesComponent }
+  { path: '', component: TopGamesComponent },
+  { path: 'page/:pageNumber', component: TopGamesComponent }
 ];
 
 @NgModule({

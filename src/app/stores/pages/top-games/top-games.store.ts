@@ -5,4 +5,6 @@ export class TopGamesStore {
   games$: BehaviorSubject<TopGamesEntry[]> = new BehaviorSubject<
     TopGamesEntry[]
   >([]);
+
+  gamesCount$: BehaviorSubject<number> = new BehaviorSubject<number>(0);
 }

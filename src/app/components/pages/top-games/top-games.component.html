@@ -1,7 +1,8 @@
 <div>
   <h1>TOP GAMES</h1>
-  <button (click)="queryTopGames()" class="btn btn-primary">Get Games</button>
+  <grid-page-navigation></grid-page-navigation>
   <div>
     <top-games-grid [games]="games"> </top-games-grid>
   </div>
+  <grid-page-navigation></grid-page-navigation>
 </div>

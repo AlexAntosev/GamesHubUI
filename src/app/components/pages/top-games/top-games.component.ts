@@ -35,12 +35,4 @@ export class TopGamesComponent implements OnInit {
   queryTopGames() {
     this.gamesRequestedAction.execute();
   }
-
-  // setPageNumbers(gamesCount: number){
-  //   this.pagesCount = Math.ceil(gamesCount/100);
-  // }
-
-//   getPagesCount() {
-//     return new Array(this.pagesCount);
-// }
 }

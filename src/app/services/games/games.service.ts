@@ -19,6 +19,13 @@ export class GamesService {
     return {
       id: game.id,
       name: game.name,
+      description: game.description || ' - ',
+      image: game.image,
+      isFree: game.isFree,
+      releaseDate: game.releaseDate,
+      requiredAge: game.requiredAge,
+      type: game.type,
+      website: game.website || '',
       overallRank: game.overallRank,
       rating: game.rating
     };

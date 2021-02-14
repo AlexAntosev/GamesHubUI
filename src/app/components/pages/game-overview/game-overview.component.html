@@ -1,3 +1,24 @@
-<h1>{{game.name}}</h1>
+<div class="game-overview">
+  <div class="game-overview-header">
+    <h1>{{game.name}}</h1>
+  </div>
+  <div class="game-overview-main">
+    <div class="game-overview-image">
+      <img src="{{game.image}}"/>
+    </div>
+    <div class="game-overview-description">
+      <h4>Description: {{game.description}}</h4>
+      <h4>Type: {{game.type}}</h4>
+      <h4 *ngIf="game.isFree">Is free</h4>
+      <h4>Release date: {{game.releaseDate}}</h4>
+      <h4>Required age: {{game.requiredAge}} years</h4>
+      <h4>Website: <a href="{{game.website}}">{{game.website}}</a></h4>
+    </div>
+  </div>
+  <div class="game-overview-footer">
+    <button (click)="goBack()" class="btn btn-primary">Back</button>
+  </div>
+</div>
 
-<button (click)="goBack()" class="btn btn-primary">Back</button>
+
+

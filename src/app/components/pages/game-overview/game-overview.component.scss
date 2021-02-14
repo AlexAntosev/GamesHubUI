@@ -1,0 +1,22 @@
+.game-overview{
+  padding: 16px;
+}
+
+.game-overview-header {
+  width: max-content;
+}
+
+.game-overview-main {
+  padding: 8px 32px;
+  height: 512px;
+}
+
+.game-overview-image {
+  float: left;
+  width: 25%;
+}
+
+.game-overview-description {
+  float: right;
+  width: 75%;
+}
